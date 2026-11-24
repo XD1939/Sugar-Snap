@@ -4,10 +4,14 @@ using Microsoft.Xna.Framework;
 public class Movable
 {
     public Point Coord = Point.Zero;
-    public Point Direction = DirectionVector.South;
+    public Point DirectionVec = DirectionVector.South;
     public int Displacement = 0;
+    public Point Destination()
+    {
+        return Coord + DirectionVec * Displacement;
+    }
     public void Move()
     {
-        Coord += Direction * Displacement;
+        Coord += DirectionVec * Displacement;
     }
 }

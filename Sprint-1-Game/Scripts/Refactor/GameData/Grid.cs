@@ -1,9 +1,11 @@
+using Microsoft.Xna.Framework;
+
 public class Grid
 {
     private int Width;
     private int Height;
-    private GridCell[,] GridArray ;
-    Grid(int width, int height)
+    private GridCell[,] GridArray;
+    public void Init(int width, int height)
     {
         Width = width;
         Height = height;
@@ -16,8 +18,8 @@ public class Grid
             }
         }
     }
-    public GridCell GetGridCell(int x, int y)
+    public GridCell GetGridCell(Point Coord)
     {
-        return GridArray[x,y];
+        return GridArray[Coord.X,Coord.Y];
     }
 }

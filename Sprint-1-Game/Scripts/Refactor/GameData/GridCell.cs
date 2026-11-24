@@ -7,5 +7,6 @@ public class GridCell(int x, int y)
     public List<IPlayer> PlayersOnCell = [];
     public List<IObject> ObjectsOnCell = [];
     public List<IEnemy> EnemiesOnCell = [];
+    public bool CanMoveTo = false;
 
 }
