@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Audio;
 
 namespace Scripts.GameComponents;
 
-public class SoundController : IAudioController
+public class SoundController
 {
     private readonly Dictionary<string, SoundConfig> SoundMap = [];
     public float Volume { get; set; } = 1.0f;

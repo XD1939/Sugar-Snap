@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Scripts.GameComponents;
 
-public class AudioManager : IAudioManager
+public class AudioManager
 {
     private readonly SoundController SoundController = new();
     private readonly SongController SongController = new();

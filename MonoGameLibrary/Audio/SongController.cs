@@ -3,7 +3,7 @@ using Microsoft.Xna.Framework.Media;
 
 namespace Scripts.GameComponents;
 
-public class SongController : IAudioController
+public class SongController
 {
     private readonly Dictionary<string, SongConfig> SongMap = [];
     public float Volume { get; set; } = 1.0f;
