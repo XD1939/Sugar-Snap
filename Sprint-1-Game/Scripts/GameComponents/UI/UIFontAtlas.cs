@@ -2,7 +2,7 @@ using System.Collections.Generic;
 using Microsoft.Xna.Framework.Graphics;
 using Microsoft.Xna.Framework.Content;
 using System;
-namespace Scripts.GameComponents;
+namespace MonoGameLibrary;
 public class UIFontAtlas(ContentManager content)
 {
     private readonly Dictionary<string, SpriteFont> FontMap = new();

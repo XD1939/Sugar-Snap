@@ -2,7 +2,7 @@ using System;
 using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using Scripts.Game;
-namespace Scripts.GameComponents;
+namespace MonoGameLibrary;
 
 public class UIFont(UIFontAtlas uIFontAtlas)
 {
