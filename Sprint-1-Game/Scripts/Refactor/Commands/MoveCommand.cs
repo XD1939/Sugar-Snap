@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-public class MoveCommand(Player player, Point directionVec, Grid grid):ICommand
+public class MoveCommand(Entity player, Point directionVec, Grid grid):ICommand
 {
     public void Execute()
     {

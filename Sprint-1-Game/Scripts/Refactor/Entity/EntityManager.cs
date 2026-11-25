@@ -4,7 +4,7 @@ public class EntityManager
 {
     private int NextId = 0;
 
-    private readonly Dictionary<int, Entity> Entities = new();
+    public  Dictionary<int, Entity> Entities = new();
 
     public Entity CreateEntity()
     {
