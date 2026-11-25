@@ -15,7 +15,7 @@ public class TitleScene : Scene
 
         // While on the title screen, we can enable exit on escape so the player
         // can close the game by pressing the escape key.
-        Core.ExitOnEscape = true;
+        Core.ExitOnEscape = false;
     }
     public override void LoadContent()
     {
@@ -31,6 +31,10 @@ public class TitleScene : Scene
         if (Core.Input.Keyboard.WasKeyJustPressed(Keys.Enter))
         {
             Core.ChangeScene(new GameScene());
+        }
+        if (Core.Input.Keyboard.WasKeyJustPressed(Keys.L))
+        {
+            Core.ChangeScene(new LevelEiditorScene());
         }
     }
     public override void Draw(GameTime gameTime)

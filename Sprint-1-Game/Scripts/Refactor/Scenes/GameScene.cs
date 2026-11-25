@@ -16,7 +16,6 @@ public class GameScene : Scene
         // LoadContent is called during base.Initialize().
         base.Initialize();
 
-        AssignRandomBatVelocity();
     }
     public override void LoadContent()
     {
@@ -27,11 +26,7 @@ public class GameScene : Scene
     }
     public override void Update(GameTime gameTime)
     {
-        
-    }
-    private void AssignRandomBatVelocity()
-    {
-    
+        CheckKeyboardInput();
     }
 
     private void CheckKeyboardInput()
