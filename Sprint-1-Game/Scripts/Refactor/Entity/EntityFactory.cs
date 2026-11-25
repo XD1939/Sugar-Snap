@@ -13,9 +13,7 @@ public class EntityFactory
     {
         Entity player = EntityManager.CreateEntity();
 
-        player.AddTag(EntityTag.Player);
-        player.Add(new Movable { Coord = coord });
-        player.Add(new Rotatable());
+        EntityConfigs.ConfigurePlayer(player);
 
         return player;
     }

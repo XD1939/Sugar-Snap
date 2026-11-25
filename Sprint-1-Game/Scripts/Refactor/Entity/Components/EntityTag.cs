@@ -1,12 +1,7 @@
 public enum EntityTag
 {
     Empty,
-    Floor,
-    Pit,
-    Water,
-    Ice,
-    Lava,
-    Bug,
+    Bugs,
     VineSeed,
     PumpkinSeed,
     Rock,
