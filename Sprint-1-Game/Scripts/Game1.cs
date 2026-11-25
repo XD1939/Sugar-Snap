@@ -3,6 +3,8 @@ using Microsoft.Xna.Framework.Graphics;
 using MonoGameLibrary;
 using Gum.Forms;
 using Gum.Forms.Controls;
+using Refactor.Scenes;
+
 namespace Sprint_1_Game.Scripts;
 
 public class Game1 : Core
@@ -25,6 +27,7 @@ public class Game1 : Core
         // Setup.Initialize(out var sceneManager);
         // //InitializeGum();
         // SceneManager = sceneManager;
+        ChangeScene(new TitleScene());
         base.Initialize();
     }
 

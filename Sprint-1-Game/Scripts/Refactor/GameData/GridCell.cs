@@ -5,7 +5,7 @@ public class GridCell(int x, int y)
 {
     public Point Coord { get; } = new(x, y);
     public List<Entity> Entity = [];
-    public List<IEnemy> EnemiesOnCell = [];
+    //public List<IEnemy> EnemiesOnCell = [];
     public bool CanMoveTo = false;
 
 }
