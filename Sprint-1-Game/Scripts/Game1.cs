@@ -1,7 +1,6 @@
 ﻿using Microsoft.Xna.Framework;
 using Microsoft.Xna.Framework.Graphics;
 using MonoGameLibrary;
-using Scripts.Game;
 using Gum.Forms;
 using Gum.Forms.Controls;
 namespace Sprint_1_Game.Scripts;
@@ -13,43 +12,43 @@ public class Game1 : Core
     private static readonly int ScreenHeight = 720;
     private static readonly bool IsFullScreen = false;
     private static readonly Color BackgroundColor = Color.Black;
-    private readonly Setup Setup;
-    private SceneManager SceneManager;
+    // private readonly Setup Setup;
+    // private SceneManager SceneManager;
 
     public Game1() : base(Name, ScreenWidth, ScreenHeight, IsFullScreen)
     {
-        Setup = new(Content, Window);
+        // Setup = new(Content, Window);
     }
 
     protected override void Initialize()
     {
-        Setup.Initialize(out var sceneManager);
-        //InitializeGum();
-        SceneManager = sceneManager;
+        // Setup.Initialize(out var sceneManager);
+        // //InitializeGum();
+        // SceneManager = sceneManager;
         base.Initialize();
     }
 
     protected override void LoadContent()
     {
-        Setup.LoadContent();
-        base.LoadContent();
-        SceneManager.Init();
+        // Setup.LoadContent();
+        // base.LoadContent();
+        // SceneManager.Init();
     }
 
     protected override void Update(GameTime gameTime)
     {
-        SceneManager.Update(gameTime.ElapsedGameTime.Milliseconds);
-        if (SceneManager.ShouldExit)
-        {
-            Exit();
-        }
-        if (SceneManager.ShouldRestart)
-        {
-            Setup.Initialize(out var sm);
-            SceneManager = sm;
-            Setup.LoadContent();
-            SceneManager.Init();
-        }
+        // SceneManager.Update(gameTime.ElapsedGameTime.Milliseconds);
+        // if (SceneManager.ShouldExit)
+        // {
+        //     Exit();
+        // }
+        // if (SceneManager.ShouldRestart)
+        // {
+        //     Setup.Initialize(out var sm);
+        //     SceneManager = sm;
+        //     Setup.LoadContent();
+        //     SceneManager.Init();
+        // }
         base.Update(gameTime);
     }
 
@@ -60,7 +59,7 @@ public class Game1 : Core
         SpriteBatch.Begin(SpriteSortMode.FrontToBack);
 
         // TEST (random destination)
-        SceneManager.Draw(SpriteBatch);
+        // SceneManager.Draw(SpriteBatch);
         SpriteBatch.End();
 
         base.Draw(gameTime);
