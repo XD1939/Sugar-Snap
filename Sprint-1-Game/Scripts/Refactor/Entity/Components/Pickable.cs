@@ -1,4 +1,3 @@
-public class Pickable
+public class Pickable:IComponent
 {
-    public bool CanBePicked { get; set; } = true;
 }

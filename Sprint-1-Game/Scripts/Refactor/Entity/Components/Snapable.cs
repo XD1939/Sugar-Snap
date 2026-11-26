@@ -1,4 +1,4 @@
-public class Snapable
+public class Snapable:IComponent
 {
     
 }

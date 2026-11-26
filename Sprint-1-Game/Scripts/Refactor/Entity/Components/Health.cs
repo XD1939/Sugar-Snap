@@ -1,4 +1,4 @@
-public class Health
+public class Health:IComponent
 {
     public int Current { get; set; }
     public int Maximum { get; set; }

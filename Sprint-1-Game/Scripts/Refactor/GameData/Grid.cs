@@ -1,3 +1,4 @@
+using System;
 using Microsoft.Xna.Framework;
 
 public class Grid
@@ -14,12 +15,30 @@ public class Grid
         {
             for (int y = 0; y < Height; y++)
             {
-                GridArray[x, y] = new GridCell(x, y);
+                GridArray[x, y] = new GridCell(new Point(x, y), TileTag.Empty);
             }
         }
     }
     public GridCell GetGridCell(Point Coord)
     {
         return GridArray[Coord.X,Coord.Y];
+    }
+    public bool IsValidCoord(Point position)
+    {
+        return position.X >= 0 && position.X < Width &&
+               position.Y >= 0 && position.Y < Height;
+    }
+
+    public GridCell GetCell(Point position)
+    {
+        if (!IsValidCoord(position))
+            throw new ArgumentOutOfRangeException(nameof(position));
+
+        return GridArray[position.X, position.Y];
+    }
+
+    public void SetTile(Point position, TileTag tile)
+    {
+        GetCell(position).Tile = tile;
     }
 }

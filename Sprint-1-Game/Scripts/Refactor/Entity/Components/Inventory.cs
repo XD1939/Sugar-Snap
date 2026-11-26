@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-public class Inventory
+public class Inventory:IComponent
 {
     public int Capacity { get; set; } = 3;
 

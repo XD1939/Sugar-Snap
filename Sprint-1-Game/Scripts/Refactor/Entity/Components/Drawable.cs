@@ -1,4 +1,4 @@
-public class Drawable
+public class Drawable:IComponent
 {
     public string AtlasName { get; }
     public string SpriteName { get; }

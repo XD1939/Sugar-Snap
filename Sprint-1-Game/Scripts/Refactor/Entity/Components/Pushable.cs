@@ -1,4 +1,4 @@
-public class Pushable
+public class Pushable:IComponent
 {
     
 }

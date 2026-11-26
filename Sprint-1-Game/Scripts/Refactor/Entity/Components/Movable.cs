@@ -1,6 +1,6 @@
 using Microsoft.Xna.Framework;
 
-public class Movable
+public class Movable:IComponent
 {
     
 }

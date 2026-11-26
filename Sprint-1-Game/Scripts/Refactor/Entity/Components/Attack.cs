@@ -1,4 +1,4 @@
-public class Attack
+public class Attack:IComponent
 {
     public int Damage { get; set; }
     public int Range { get; set; }

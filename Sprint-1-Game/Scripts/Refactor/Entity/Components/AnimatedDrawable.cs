@@ -1,4 +1,4 @@
-public class AnimatedDrawable
+public class AnimatedDrawable:IComponent
 {
     public string AtlasName { get; }
     public string AnimationName { get; }

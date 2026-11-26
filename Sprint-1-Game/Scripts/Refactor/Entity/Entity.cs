@@ -5,14 +5,14 @@ public class Entity
 {
     public int Id { get; }
     private readonly Dictionary<Type, object> Components = new();
-    private readonly HashSet<EntityTag> _tags = new();
+    private readonly HashSet<EntityTag> Tags = new();
     public void AddTag(EntityTag tag)
     {
-        _tags.Add(tag);
+        Tags.Add(tag);
     }
     public bool HasTag(EntityTag tag)
     {
-        return _tags.Contains(tag);
+        return Tags.Contains(tag);
     }
     public Entity(int id)
     {

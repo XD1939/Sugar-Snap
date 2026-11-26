@@ -1,4 +1,3 @@
-public class Destructible
+public class Destructible:IComponent
 {
-    public bool CanBeDestroyed { get; set; } = true;
 }

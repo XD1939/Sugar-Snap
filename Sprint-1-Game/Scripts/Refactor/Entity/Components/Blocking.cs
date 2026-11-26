@@ -1,4 +1,3 @@
-public class Blocking
+public class Blocking:IComponent
 {
-    public bool IsBlocking { get; set; } = true;
 }
