@@ -1,9 +1,12 @@
 public enum TileTag
 {
     Empty,
-    Floor,
+    Dirt,
+    Grass,
+    Brick,
+    MossyBrick,
     Pit,
+    Lava,
     Water,
     Ice,
-    Lava
 }
